@@ -1,14 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
     <nav>
-      <ul className="flex justify-center mt-5">
-        <li className="font-bold ml-5 mr-5">Home</li>
-        <li className="font-bold ml-5 mr-5">About</li>
-        <li className="font-bold ml-5 mr-5">Blog</li>
-        <li className="font-bold ml-5 mr-5">Contact</li>
+      <ul className="flex justify-center mt-5 font-bold">
+        <Link href='/'><li className="ml-5 mr-5">Home</li></Link>
+        <Link href='/about'><li className="ml-5 mr-5">About</li></Link>
+        <Link href='/blog'><li className="ml-5 mr-5">Blog</li></Link>
+        <Link href='/contact'><li className="ml-5 mr-5">Contact</li></Link>
       </ul>
     </nav>
 
